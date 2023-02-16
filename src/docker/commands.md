@@ -1,0 +1,2 @@
+- Up a container: `docker-compose up -d [service_name]`
+- Check if the service is up: `docker-compose ps`

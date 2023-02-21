@@ -1,0 +1,16 @@
+use("platzi_store")
+
+// db.products.insertMany([{
+// 	name: "First Product",
+// 	price: 321
+// }, {
+// 	name: "Second Product",
+// 	price: 732
+// }])
+
+db.products.insertOne({
+	_id: 1,
+	name: "Third Product",
+	price: 721,
+	category: "Clothes"
+})

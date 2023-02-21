@@ -1,0 +1,12 @@
+use("sample_training")
+
+// $rename
+// $unset
+db.zips.updateMany(
+	{ city: "CLEVELAND" },
+	{
+		$unset: {
+			msg: ""
+		}
+	}
+)

@@ -1,0 +1,7 @@
+use("platzi_store")
+
+db.products.deleteMany({
+	price: {
+		$gt: 300
+	}
+})

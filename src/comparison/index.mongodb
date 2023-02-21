@@ -1,7 +1,20 @@
 use("platzi_store")
 
-db.inventory.deleteMany({
-	"item.name": {
-		$eq: "ij"
+// db.inventory.deleteMany({
+// 	"item.name": {
+// 		$eq: "ij"
+// 	}
+// })
+
+// db.inventory.find({
+// 	qty: {
+// 		$gt: 20
+// 	}
+// })
+
+db.inventory.find({
+	qty: {
+		$lte: 25,
+		$gte: 20
 	}
 })

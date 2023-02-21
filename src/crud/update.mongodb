@@ -1,0 +1,14 @@
+use("platzi_store")
+
+db.products.updateOne(
+	{ _id: 1 },
+	{
+		$set: {
+			name: "Remastered First Product",
+			price: 201,
+			tags: ["A", "B", "C"]
+		}
+	}
+)
+
+db.products.find()

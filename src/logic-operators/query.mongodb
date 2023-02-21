@@ -1,0 +1,19 @@
+use("sample_training")
+
+// db.inspections.find({
+// 	result: {
+// 		$nin: ["No Violation Issued", "Unable to Locate"]
+// 	}
+// }, {
+// 	result: 1,
+// 	_id: 0
+// })
+
+db.inspections.find({
+	result: {
+		$not:	/Unable to Locate/i
+	}
+}, {
+	result: 1,
+	_id: 0
+})
